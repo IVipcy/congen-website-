@@ -193,16 +193,6 @@ body {
   box-shadow: 0 20px 40px rgba(0,0,0,0.2);
 }
 
-.illustration-credit {
-  font-size: 10px;
-  color: rgba(255, 255, 255, 0.7);
-  text-align: right;
-  margin-top: 5px;
-  margin-bottom: 0;
-  font-weight: 300;
-  font-style: italic;
-}
-
 /* ボタン */
 .btn {
   display: inline-block;
@@ -937,7 +927,7 @@ body {
   }
 
   .hero-text h1 {
-    font-size: 32px;
+    font-size: 48px;
   }
 
   .cards {
@@ -990,7 +980,7 @@ body {
   }
 
   .hero-text h1 {
-    font-size: 24px;
+    font-size: 36px;
   }
 
   .contact-form {
