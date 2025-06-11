@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>お問い合わせ - CONGEN</title>
+    <meta name="description" content="株式会社CONGENへのお問い合わせページです。AIアバター開発やソリューションに関するご相談をお気軽にお寄せください。">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+</head>
+<body class="contact-page">
+    <!-- 浮遊する丸 -->
+    <div class="contact-floating-circle-1"></div>
+    <div class="contact-floating-circle-2"></div>
+    <div class="contact-floating-circle-3"></div>
+    
+    <!-- ヘッダー -->
+    <header class="header">
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <img src="img/WEB会社ロゴ.png" alt="CONGEN Logo">
+            </a>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">TOP</a></li>
+                    <li><a href="index.html#solution">ソリューション</a></li>
+                    <li><a href="company.html">会社概要</a></li>
+                    <li><a href="contact.html">お問い合わせ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- お問い合わせセクション -->
+    <section class="section">
+        <div class="container">
+            <h1 class="section-title">お問い合わせ</h1>
+            
+            <form id="contact-form" class="contact-form">
+                <div class="form-group">
+                    <label for="name">お名前</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="company">会社名</label>
+                    <input type="text" id="company" name="company">
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">電話番号</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">メールアドレス</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">お問い合わせ内容詳細</label>
+                    <textarea id="message" name="message" placeholder="お問い合わせ内容をご記入ください" required></textarea>
+                </div>
+                
+                <div class="form-submit">
+                    <button type="submit" class="btn">送信</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- フッター -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 CONGEN. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html> 
