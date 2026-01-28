@@ -2480,9 +2480,22 @@ body {
   }
 
   .hero-subtitle {
-    font-size: 36px;
-    margin-bottom: 20px;
-    letter-spacing: 1px;
+    font-size: 28px !important;
+    margin-bottom: 20px !important;
+    letter-spacing: 0.5px !important;
+    line-height: 1.4 !important;
+    word-break: keep-all !important;
+    overflow-wrap: break-word !important;
+    font-weight: 700 !important;
+  }
+
+  .pc-only {
+    display: none;
+  }
+
+  .hero-description {
+    font-size: 14px !important;
+    line-height: 1.8 !important;
   }
 
   .hero-text h1 {
@@ -2605,6 +2618,34 @@ body {
   .footer-links {
     flex-direction: column;
     gap: 15px;
+  }
+
+  /* ニュース・メディア スマホ対応 */
+  .news-item {
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px 0;
+  }
+
+  .news-date {
+    font-size: 13px;
+    min-width: auto;
+  }
+
+  .news-tag {
+    font-size: 12px;
+    min-width: auto;
+    padding: 4px 12px;
+  }
+
+  .news-content h3 {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .news-content p {
+    font-size: 14px;
+    line-height: 1.6;
   }
 }
 
