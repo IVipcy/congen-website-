@@ -81,12 +81,12 @@ function initScrollAnimations() {
     }, observerOptions);
     
     // アニメーション対象要素
-    const animatedElements = document.querySelectorAll('.card, .step, .usecase-item, .partner-item');
+    const animatedElements = document.querySelectorAll('.card, .step, .usecase-item, .partner-item, .feature-item, .solution-card, .issue-card, .case-card, .mvv-item, .value-card, .aiagent-point, .avator-feature-block, .news-item');
     
-    animatedElements.forEach(element => {
+    animatedElements.forEach((element, index) => {
         element.style.opacity = '0';
         element.style.transform = 'translateY(30px)';
-        element.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+        element.style.transition = `opacity 0.6s ease ${index * 0.1}s, transform 0.6s ease ${index * 0.1}s`;
         observer.observe(element);
     });
 }
@@ -275,24 +275,32 @@ function initScrollToTop() {
     scrollButton.className = 'scroll-to-top';
     scrollButton.style.cssText = `
         position: fixed;
-        bottom: 20px;
-        right: 20px;
-        width: 50px;
-        height: 50px;
+        bottom: 30px;
+        right: 30px;
+        width: 60px;
+        height: 60px;
         border-radius: 50%;
-        background: var(--main-color);
+        background: linear-gradient(135deg, #0cc0df, #58a6f7);
         color: white;
         border: none;
-        font-size: 20px;
+        font-size: 24px;
         cursor: pointer;
         opacity: 0;
         visibility: hidden;
-        transition: all 0.3s ease;
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
         z-index: 1000;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        box-shadow: 0 8px 25px rgba(12, 192, 223, 0.4);
     `;
     
     scrollButton.addEventListener('click', scrollToTop);
+    scrollButton.addEventListener('mouseenter', function() {
+        this.style.transform = 'scale(1.1) rotate(-10deg)';
+        this.style.boxShadow = '0 12px 35px rgba(12, 192, 223, 0.5)';
+    });
+    scrollButton.addEventListener('mouseleave', function() {
+        this.style.transform = 'scale(1) rotate(0deg)';
+        this.style.boxShadow = '0 8px 25px rgba(12, 192, 223, 0.4)';
+    });
     document.body.appendChild(scrollButton);
     
     // スクロール位置に応じて表示/非表示
