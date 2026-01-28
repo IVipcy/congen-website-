@@ -2565,6 +2565,72 @@ body {
     text-align: center;
   }
 
+  /* 代表者プロフィールカード */
+  .profile-card {
+    flex-direction: column !important;
+    text-align: center !important;
+  }
+
+  .profile-image {
+    margin: 0 auto 20px auto !important;
+  }
+
+  .profile-image img {
+    width: 150px !important;
+  }
+
+  .profile-text h4 {
+    text-align: center !important;
+  }
+
+  .profile-text p {
+    text-align: left !important;
+    font-size: 14px !important;
+  }
+
+  /* 会社情報テーブル */
+  .company-table {
+    display: block !important;
+  }
+
+  .company-table tbody {
+    display: block !important;
+  }
+
+  .company-table tr {
+    display: flex !important;
+    flex-direction: column !important;
+    margin-bottom: 0 !important;
+    border: none !important;
+    border-bottom: 1px solid #e0e0e0 !important;
+  }
+
+  .company-table tr:last-child {
+    border-bottom: none !important;
+  }
+
+  .company-table td {
+    display: block !important;
+    width: 100% !important;
+    border: none !important;
+    padding: 15px 20px !important;
+  }
+
+  .company-table td:first-child {
+    background: #12c1df !important;
+    color: white !important;
+    font-weight: 600 !important;
+    font-size: 14px !important;
+    padding: 12px 20px !important;
+  }
+
+  .company-table td:last-child {
+    background: #f8f9fa !important;
+    color: var(--text-color) !important;
+    padding: 20px !important;
+    line-height: 1.6 !important;
+  }
+
   .company-hero h1 {
     font-size: 40px;
   }
